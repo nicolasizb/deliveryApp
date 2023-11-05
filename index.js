@@ -6,10 +6,10 @@ const port = process.env.PORT
 
 connection()
 .then(
-    // app.listen(port, () => {
-    //         console.log(`Server lives in port: ${ port }`)
-    //     })
-    app.listen(port, "0.0.0.0", function () {
-        // ...
-      })
+    app.listen(port, () => {
+            console.log(`Server lives in port: ${ port }`)
+        })
+    // app.listen(port, "0.0.0.0", function () {
+    //     // ...
+    //   })
     )
