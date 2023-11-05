@@ -1,8 +1,9 @@
 const mongoose = require('mongoose')
+require('dotenv').config()  
 
 async function connection() {
     await mongoose
-        .connect('mongodb+srv://RappiAdmin:1234@rappiadmin.wuivng7.mongodb.net/?retryWrites=true&w=majority')
+        .connect(process.env.MONGO_DB)
         .catch(err => console.log(err))
 }
 
