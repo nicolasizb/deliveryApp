@@ -4,6 +4,10 @@ const CustomerModel =  require('../models/Customer.model.js')
 const DeliveryModel =  require('../models/Delivery.model.js')
 const RestaurantModel =  require('../models/Restaurant.model.js')
 
+router.get('/test', (req, res) => {
+  res.status(200).json('ALL GOOD!')
+})
+
 router.get('/login', async (req, res) => {
     const { email, password } = req.body;
 
